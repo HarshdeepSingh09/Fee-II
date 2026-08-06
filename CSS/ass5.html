@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.container{
+    display:flex;
+    flex-wrap:wrap;
+    width:420px;
+    gap:20px;
+}
+
+input{
+    display:none;
+}
+
+.box{
+    width:100px;
+    height:100px;
+    border:2px solid;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+.box span{
+    width:15px;
+    height:15px;
+    border:2px solid;
+    margin-bottom:8px;
+}
+
+#red:checked~.r2,
+#red:checked~.r3{
+    background:red;
+}
+
+#red:checked~.r2 span,
+#red:checked~.r3 span,
+#green:checked~.g3 span{
+    display:none;
+}
+
+#green:checked~.g3{
+    background:green;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<input type="checkbox" id="red">
+<input type="checkbox" id="green">
+
+<label for="red" class="box">
+    <span></span>
+    Red
+</label>
+<div class="box g3">
+    <span></span>
+    Green
+</div>
+
+</div>
+
+</body>
+</html>

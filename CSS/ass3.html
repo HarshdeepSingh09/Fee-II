@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign Up Form</title>
+
+    <style>
+        body{
+            background:#003344;
+            font-family:Arial;
+        }
+ 
+        fieldset{
+            width:500px;
+            margin:100px auto;
+            background:white;
+            border:3px solid cyan;
+        }
+
+        
+        legend{
+            color:white;
+            background:#003344;
+            font-size:22px;
+            font-weight:bold;
+        }
+
+        table{
+            width:90%;
+            border-collapse:collapse;
+        }
+
+        td{
+            border:1px solid blue;
+            padding:12px;
+        }
+
+        input[type=text],
+        input[type=email]{
+            background:lightgreen;
+        }
+
+        input[type=text]:focus,
+        input[type=email]:focus{
+            background:white;
+        }
+
+        input[type=submit],
+        input[type=reset]{
+            padding:5px 15px;
+        }
+    </style>
+</head>
+<body>
+<fieldset>
+    <legend>SignUp Form</legend>
+    <form>
+        <table>
+            <tr>
+                <th colspan="2">Please Fill the SignUp Form</th>
+            </tr>
+            <tr>
+                <td>Username</td>
+                <td><input type="text" required></td>
+            </tr>
+            <tr>
+                <td>First Name</td>
+                <td><input type="text" required></td>
+            </tr>
+            <tr>
+                <td>Last Name</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><input type="email" required></td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td>
+                    <input type="radio" name="g"> Male
+                    <input type="radio" name="g"> Female
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="SUBMIT">
+                    <input type="reset" value="RESET">
+                </td>
+            </tr>
+        </table>
+    </form>
+</fieldset>
+</body>
+</html>

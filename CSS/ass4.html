@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sticky Navbar with Advertisement</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:"Times New Roman", serif;
+    background:#b8f0b0;
+}
+
+/* ================= NAVBAR ================= */
+
+nav{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:#16dfe3;
+    border:2px solid black;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+}
+
+nav ul li{
+    flex:1;
+    border-right:2px solid black;
+}
+
+nav ul li:last-child{
+    border-right:none;
+}
+
+nav ul li a{
+    display:block;
+    text-align:center;
+    padding:15px;
+    color:black;
+    text-decoration:none;
+    font-size:18px;
+}
+
+nav ul li a:hover{
+    background:#00c9d2;
+}
+
+/* ================= PAGE LAYOUT ================= */
+
+.container{
+    display:flex;
+    align-items:flex-start;
+    gap:20px;
+    padding:20px;
+}
+
+/* ================= CONTENT ================= */
+
+.content{
+    flex:4;
+    background:#b8f0b0;
+    border:2px solid black;
+    padding:25px;
+    min-height:1500px;
+}
+
+.content h1{
+    margin-bottom:10px;
+}
+
+.content p{
+    font-size:18px;
+    line-height:1.4;
+    text-align:justify;
+}
+
+/* ================= ADVERTISEMENT ================= */
+
+.ad{
+    flex:1;
+    background:white;
+    border:2px solid black;
+    padding:15px;
+    text-align:center;
+    position:sticky;
+    top:80px;
+}
+
+.ad img{
+    width:150px;
+    height:150px;
+    margin-top:10px;
+}
+
+</style>
+</head>
+<body>
+
+<nav>
+    <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Login</a></li>
+        <li><a href="#">Logout</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+
+    <!-- Main Content -->
+    <div class="content">
+
+        <h1>Services</h1>
+        <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque omnis id quisquam molestias est,
+        enim minus. Nostrum consectetur ut natus, dolor velit omnis consequatur totam! Minus culpa quas
+        omnis blanditiis illo consequatur rerum alias at, unde voluptas dicta natus nostrum ratione
+        exercitationem corporis laborum saepe totam impedit perferendis?</p>
+        <br><br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus debitis ut sint doloremque,
+        hic incidunt et vel autem praesentium placeat minus obcaecati modi? Nisi ut dolorem distinctio
+        vitae enim dolores quisquam quaerat repudiandae dolore illo.
+        <br><br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur odit cum nam explicabo,
+        cumque quibusdam quae officiis laboriosam nisi sequi voluptatem nemo itaque ut asperiores
+        commodi atque amet fugiat eos repellat autem.
+        <br><br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, molestiae obcaecati at natus
+        voluptates, odio numquam voluptas quas suscipit distinctio cum ipsa vero eos debitis iste
+        voluptatum culpa id.
+        <br><br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, officiis. Molestiae
+        magni que nam doloremque quis ipsum repudiandae quasi dolores necessitatibus.
+        <br><br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quisquam mollitia ipsam eaque
+        tempora, rem laboriosam adipisci incidunt veniam voluptate ab.
+        <br><br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam beatae fuga ea molestiae
+        distinctio laboriosam, sit saepe maxime quasi velit deserunt.
+        <br><br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis nemo sed necessitatibus
+        cumque ratione quaerat, dolorum impedit minus consequatur molestiae doloremque asperiores.
+        </p>
+        <br>
+        <h1>Login</h1>
+        <br><br>
+        <h1>Logout</h1>
+    </div>
+    <aside class="ad">
+        <h3>Advertisement</h3>
+        <img src="https://www.paperandtea.com/cdn/shop/articles/Erdbeere_f8a25094-b445-4283-bf2b-1bc4e306712f.jpg?v=1779790995&width=1200" alt="Advertisement">
+        <p><b>Fresh Strawberries</b></p>
+        <p>Buy 1 Get 1 Free!</p>
+    </aside>
+
+</div>
+
+</body>
+</html>

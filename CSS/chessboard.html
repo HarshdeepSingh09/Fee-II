@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    gap:20px;
+}
+
+.board{
+    display:grid;
+    grid-template-columns:repeat(8,60px);
+    grid-template-rows:repeat(8,60px);
+    border:2px solid black;
+}
+
+.box{
+    width:60px;
+    height:60px;
+}
+
+.white{
+    background:white;
+}
+
+.black{
+    background:black;
+}
+
+.red{
+    background:red;
+}
+
+.yellow{
+    background:yellow;
+}
+
+
+.board2{
+    display:none;
+    background-color: blue;
+  
+    grid-template-columns:repeat(8,60px);
+    grid-template-rows:repeat(8,60px);
+}
+
+
+.board2 .box{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+}
+
+
+#change:checked ~ .board1{
+    display:none;
+}
+
+#change:checked ~ .board2{
+    display:grid;
+}
+
+
+#change{
+    width:30px;
+    height:30px;
+    accent-color:red;
+    cursor:pointer;
+}
+
+label{
+    font-size:22px;
+    font-weight:bold;
+}
+
+</style>
+</head>
+
+<body>
+
+    <label for="change">Change Chess Board</label>
+    <input type="checkbox" id="change">
+
+<div class="board board1">
+
+<div class="box white"></div><div class="box black"></div><div class="box white"></div><div class="box black"></div><div class="box white"></div><div class="box black"></div><div class="box white"></div><div class="box black"></div>
+
+<div class="box black"></div><div class="box white"></div><div class="box black"></div><div class="box white"></div><div class="box black"></div><div class="box white"></div><div class="box black"></div><div class="box white"></div>
+
+<div class="box white"></div><div class="box black"></div><div class="box white"></div><div class="box black"></div><div class="box white"></div><div class="box black"></div><div class="box white"></div><div class="box black"></div>
+
+<div class="box black"></div><div class="box white"></div><div class="box black"></div><div class="box white"></div><div class="box black"></div><div class="box white"></div><div class="box black"></div><div class="box white"></div>
+
+<div class="box white"></div><div class="box black"></div><div class="box white"></div><div class="box black"></div><div class="box white"></div><div class="box black"></div><div class="box white"></div><div class="box black"></div>
+
+<div class="box black"></div><div class="box white"></div><div class="box black"></div><div class="box white"></div><div class="box black"></div><div class="box white"></div><div class="box black"></div><div class="box white"></div>
+
+<div class="box white"></div><div class="box black"></div><div class="box white"></div><div class="box black"></div><div class="box white"></div><div class="box black"></div><div class="box white"></div><div class="box black"></div>
+
+<div class="box black"></div><div class="box white"></div><div class="box black"></div><div class="box white"></div><div class="box black"></div><div class="box white"></div><div class="box black"></div><div class="box white"></div>
+
+</div>
+
+<div class="board board2">
+
+<div class="box yellow"></div><div class="box red"></div><div class="box yellow"></div><div class="box red"></div><div class="box yellow"></div><div class="box red"></div><div class="box yellow"></div><div class="box red"></div>
+
+<div class="box red"></div><div class="box yellow"></div><div class="box red"></div><div class="box yellow"></div><div class="box red"></div><div class="box yellow"></div><div class="box red"></div><div class="box yellow"></div>
+
+<div class="box yellow"></div><div class="box red"></div><div class="box yellow"></div><div class="box red"></div><div class="box yellow"></div><div class="box red"></div><div class="box yellow"></div><div class="box red"></div>
+
+<div class="box red"></div><div class="box yellow"></div><div class="box red"></div><div class="box yellow"></div><div class="box red"></div><div class="box yellow"></div><div class="box red"></div><div class="box yellow"></div>
+
+<div class="box yellow"></div><div class="box red"></div><div class="box yellow"></div><div class="box red"></div><div class="box yellow"></div><div class="box red"></div><div class="box yellow"></div><div class="box red"></div>
+
+<div class="box red"></div><div class="box yellow"></div><div class="box red"></div><div class="box yellow"></div><div class="box red"></div><div class="box yellow"></div><div class="box red"></div><div class="box yellow"></div>
+
+<div class="box yellow"></div><div class="box red"></div><div class="box yellow"></div><div class="box red"></div><div class="box yellow"></div><div class="box red"></div><div class="box yellow"></div><div class="box red"></div>
+
+<div class="box red"></div><div class="box yellow"></div><div class="box red"></div><div class="box yellow"></div><div class="box red"></div><div class="box yellow"></div><div class="box red"></div><div class="box yellow"></div>
+
+</div>
+
+</body>
+</html>

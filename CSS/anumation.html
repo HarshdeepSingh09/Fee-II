@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            background: black;
+        }
+        .square{
+            width: 90px;
+            height: 90px;
+            background: red;
+            position: relative;
+            animation: circular 1s infinite linear;
+            
+        }
+        /* @keyframes mymoves {
+            0% {left: 0px; top: 0px}
+            25%{ left: 300px; top: 0px;}
+            50%{ left: 300px; top: 200px;}
+            75%{ left: 0px; top: 200px;}
+            100%{ left: 0px; top: 0px;}
+        } */
+
+        @keyframes circular {
+            0% {transform: rotate(0ded);}
+            100% {transform: rotate(360deg);}
+        }
+    </style>
+</head>
+<body>
+    <div class="square"></div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Box Shadow Assignment</title>
+
+    <style>
+        body{
+            text-align:center;
+            font-family:Arial;
+        }
+
+        .box{
+            display:inline-block;
+        }
+
+        .box img{
+            width:250px;
+            height:300px;
+            border:2px solid black;
+        }
+        #effect1:checked ~ .box{
+            box-shadow:10px 10px 12px red;
+        }
+
+        #effect2:checked ~ .box{
+            box-shadow:-10px -10px 12px red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <input type="radio" id="effect1" name="shadow">
+    <label for="effect1">Shadow Effect 1</label>
+
+    <input type="radio" id="effect2" name="shadow">
+    <label for="effect2">Shadow Effect 2</label>
+
+    <br><br>
+
+    <div class="box">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEZv2NpTsg9kEjuG7o4tXmoqU5P7e4yaSz4SNM-s4TSpN0rcS1V8J1780&s=10" alt="Flower">
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,10 @@
+.container{
+    border: 15px solid red;
+    width: 600px;
+    height: 400px;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrnoeCDSTNv_vdY7dQ3yRL9g0bGCq9ZsTFWUiki63hrQ&s');
+    background-position: top; /*center the image*/
+    background-color: yellow; /*if image is not found*/
+    background-repeat: no-repeat; /*do not repeat the image*/
+    background-size: cover; /*cover the entire container*/
+}
