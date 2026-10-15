@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function showpath(){
+        var filepath = document.getElementById("myfile").value;
+        console.log(filepath);
+    }
+</script>
+<body>
+    Select image file - <input type="file" id="myfile">
+    <br>
+    <button onclick="showpath()">Show path</button>
+</body>
+</html>

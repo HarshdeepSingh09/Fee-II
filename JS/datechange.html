@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <H2 id="dateDisplay"></H2>
+    <button id="btn1">Click</button>
+    <script>
+        document.getElementById("btn1").addEventListener("click", function() {
+            // Handle button click event
+            //NOW ADDING THE CODE SO THAT WHEN IT IS CLICKED THE DATE IS SHOWN IN FORMAT JULY 31, 2025 OUTSIDE THE BUTTON
+            const today = new Date();
+            const options = { year: 'numeric', month: 'long', day: 'numeric' };
+            document.getElementById("dateDisplay").innerText = today.toLocaleDateString('en-US', options);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+.container{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+}
+.box{
+    padding: 20px;
+    background-color: skyblue;
+    border: 1px solid blue;
+
+}
+
+@media(min-width:768px) {
+    .container{flex-direction: row;}
+}

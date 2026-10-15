@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Preview</title>
+</head>
+
+<body>
+
+    <h2>Select Images:</h2>
+
+    <input type="file" id="imageInput" accept="image/*" multiple>
+    
+    <br><br>
+    <script>
+        const input = document.getElementById("imageInput");
+        input.addEventListener("change", function () {
+            for(let i = 0;i<input.files.length;i++){
+                const file = input.files[i];
+                console.log("Name:", file.name);
+                console.log("Size:", file.size);
+                console.log("Type:", file.type);
+            }
+        });
+    </script>
+
+</body>
+</html>

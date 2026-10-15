@@ -4,14 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <
+    <style>
+        ol.custom-steps{
+            list-style: none;
+            counter-reset: count;
+        }
+        ol.custom-steps li{
+            position: relative;
+            margin-bottom: 20px;
+            padding-left: 40px;
+            min-height: 30px;
+            display: flex;
+            align-items: center;
+        }
+        ol.custom-steps li::before{
+            counter-increment: count;
+            content: counter(count);
+            display: flex;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: #3498db;
+            color: white;
+            align-items: center;
+            justify-content: center;
+        }
+        .custom-steps1{
+            display : none;
+        }
+        #check:checked ~ .custom-steps1{
+            display : block;
+        }
+        #check:checked ~ .custom-steps{
+            display : none;
+        }
+    </style>
 </head>
 <body>
-    <input type="checkbox" id="checkbox">
-    <ol>
-        <li>Create an account with  your email</li>
-        <li>Verify your identity through dashboard</li>
-        <li>Setup your profile and start building</li>
+    <input type = 'checkbox' id = 'check' name = 'check' value = 'check'>Show original List
+    <ol class="custom-steps">
+        <li> Gather materials</li>
+        <li> Prepare the workspace</li>
+        <li>Follow instructions</li>
+        <li> Complete the project</li>
+    </ol>
+    <ol class="custom-steps1">
+        <li> Gather materials</li>
+        <li> Prepare the workspace</li>
+        <li>Follow instructions</li>
+        <li> Complete the project</li>
     </ol>
 </body>
 </html>

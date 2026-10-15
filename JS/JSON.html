@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="text"></p>
+    <script>
+        import mydata from './mydata.json' assert { type: 'json' };
+        var user_check = '';
+        for (const u of mydata){
+            console.log(u.username, u.password);
+            if(u.username == "Ram" && u.password == "ram123"){
+                user_check = "found";
+                break;
+            }
+            else{
+                user_check = "notfound";
+            }
+        }
+        if(user_check == "found"){
+            document.getElementById("text").innerText = "Login Successful";
+        }
+        else{
+            document.getElementById("text").innerText = "User Not Found";
+        }
+    </script>
+</body>
+</html>

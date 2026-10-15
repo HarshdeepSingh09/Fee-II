@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script>
+        function fillcolor() {
+            let tab = document.getElementById("mytab");
+
+            if (document.getElementById("bgcolor1").checked)
+                tab.style.backgroundColor = "yellow";
+            else if (document.getElementById("bgcolor2").checked)
+                tab.style.backgroundColor = "grey";
+            else if (document.getElementById("bgcolor3").checked)
+                tab.style.backgroundColor = "green";
+            else if (document.getElementById("bgcolor4").checked)
+                tab.style.backgroundColor = "cyan";
+        }
+    </script>
+</head>
+<body>
+    <h2> Table</h2>
+
+    <table id="mytab" border="1" width="50%">
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+        </tr>
+        <tr>
+            <td>Ram</td>
+            <td>ram123@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Shruti</td>
+            <td>shruti321@gmail.com</td>
+        </tr>
+    </table>
+
+    <br><b>Select Background Color for Table:</b><br>
+    <input type="radio" id="bgcolor1" name="bgcolor" onclick="fillcolor()">Yellow
+    <input type="radio" id="bgcolor2" name="bgcolor" onclick="fillcolor()">Grey
+    <input type="radio" id="bgcolor3" name="bgcolor" onclick="fillcolor()">Green
+    <input type="radio" id="bgcolor4" name="bgcolor" onclick="fillcolor()">Cyan
+</body>
+</html>

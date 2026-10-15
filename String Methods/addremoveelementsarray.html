@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Add/Remove Elements from Array</h2>
+    <script>
+        let myarray = ["apple", "banana", "cherry"];
+        document.write("Original Array: " + myarray + "<br>");
+
+        // Add an element to the end of the array
+        myarray.push("date");
+        document.write("After push: " + myarray + "<br>");
+
+        // Remove the last element from the array
+        myarray.pop();
+        document.write("After pop: " + myarray + "<br>");
+
+        // Add an element to the beginning of the array
+        myarray.unshift("apricot");
+        document.write("After unshift: " + myarray + "<br>");
+
+        // Remove the first element from the array
+        myarray.shift();
+        document.write("After shift: " + myarray + "<br>");
+</body>
+</html>

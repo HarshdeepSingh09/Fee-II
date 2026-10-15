@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            display: inline-flex;
+            overflow: hidden;
+            border: 4px solid navy;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoB2u_8cSm2MMrCyEGGKl4oeSzUTJEbfskhyzY7Bb82Q&s=10" alt="Image" id="img1" style="width: 150%; height: 150%;">
+    </div>
+    <br><br>
+    <button onclick="zoomin()">Zoom In</button> &nbsp;
+    <button onclick="zoomout()">Zoom Out</button>
+    <script>
+        let curscale = 0.5;
+
+        function zoomin() {
+            if (curscale >= 3)
+                alert("You are fully zoomed!");
+            else {
+                document.getElementById("img1").style.scale = curscale + 1;
+                document.getElementById("img1").style.transition = "0.5s";
+                curscale++;
+            }
+        }
+
+        function zoomout() {
+            if (curscale < 1)
+                alert("Limit Reached!");
+            else {
+                document.getElementById("img1").style.scale = curscale - 0.5;
+                document.getElementById("img1").style.transition = "0.5s";
+                curscale--;
+            }
+        }
+    </script>
+</body>
+</html>

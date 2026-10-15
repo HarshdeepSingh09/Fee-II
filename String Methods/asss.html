@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple Image Preview</title>
+</head>
+
+<body>
+
+    <h2>Select Images</h2>
+    <input type="file" id="imageInput" accept="image/*" multiple>
+    <br><br>
+    <div id="previewContainer" style=" width: 300px; height: 300px; display: block;"></div>
+
+    <script>
+    const input = document.getElementById("imageInput");
+    const previewContainer = document.getElementById("previewContainer");
+
+    input.addEventListener("change", function () {
+
+        previewContainer.innerHTML = "";
+
+        for (let i = 0; i < input.files.length; i++) {
+
+            const file = input.files[i];
+
+            const imgURL = URL.createObjectURL(file);
+
+            previewContainer.innerHTML += `
+                <img src="${imgURL}">
+            `;
+        }
+    });
+</script>
+
+</body>
+</html>

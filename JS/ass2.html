@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="2">
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>City</th>
+        </tr>
+        <tr>
+            <td id="name"></td>
+            <td id="email"></td>
+            <td id="city"></td>
+        </tr>
+    </table>
+<script>
+    let n = prompt("name");
+    let e = prompt("email");
+    let c = prompt("City");
+    document.getElementById("name").innerText = `${n}`;
+    document.getElementById("email").innerText = `${e}`;
+    document.getElementById("city").innerText = `${c}`;
+</script>
+</body>
+</html>
